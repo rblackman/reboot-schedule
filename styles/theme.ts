@@ -78,8 +78,8 @@ const Theme: ThemeType = {
 	},
 	typography: {
 		heading: {
-			family: '"Cairo Play", cursive',
-			weight: 400,
+			family: '"Rubik", sans-serif',
+			weight: 700,
 			lineHeight: 1.5
 		},
 		body: {

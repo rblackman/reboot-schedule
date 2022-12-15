@@ -1,5 +1,5 @@
 /* eslint-disable react/jsx-props-no-spreading */
-import { Cairo_Play, Noto_Sans_Mono, Rubik } from '@next/font/google';
+import { Noto_Sans_Mono, Rubik } from '@next/font/google';
 import { AppProps } from 'next/app';
 import Head from 'next/head';
 import { RecoilRoot } from 'recoil';
@@ -8,7 +8,6 @@ import GlobalStyle from '../styles/globalStyles';
 import Theme from '../styles/theme';
 
 const noto = Noto_Sans_Mono({ subsets: ['latin'] });
-const cairo = Cairo_Play({ subsets: ['latin'] });
 const rubik = Rubik({ subsets: ['latin'] });
 
 const url = process.env.NEXT_PUBLIC_URL ?? '';
@@ -58,7 +57,7 @@ export default function App({ Component, pageProps }: AppProps) {
 				<meta name="theme-color" content="#bbe1fa" />
 				<meta name="viewport" content="width=device-width, initial-scale=1" />
 			</Head>
-			<main className={`${noto.className} ${cairo.className} ${rubik.className}`}>
+			<main className={`${noto.className} ${rubik.className}`}>
 				<RecoilRoot>
 					<Component {...pageProps} />
 				</RecoilRoot>
