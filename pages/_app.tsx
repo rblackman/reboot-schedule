@@ -22,7 +22,18 @@ export default function App({ Component, pageProps }: AppProps) {
 			<Head>
 				<link rel="manifest" href="manifest.json" />
 				<link rel="icon" href="/favicon.ico" />
+				<meta name="apple-mobile-web-app-capable" content="yes" />
+				<meta name="apple-mobile-web-app-status-bar-style" content="default" />
+				<meta name="apple-mobile-web-app-title" content={name} />
+				<meta name="format-detection" content="telephone=no" />
+				<meta name="mobile-web-app-capable" content="yes" />
+
 				<link rel="apple-touch-icon" href="/icon-180.png" />
+				<link rel="apple-touch-icon" sizes="180x180" href="/icon-180.png" />
+				<link rel="apple-touch-icon" sizes="167x167" href="/icon-168.png" />
+				<link rel="mask-icon" href="/icon-mono.svg" color="#bbe1fa" />
+				<link rel="shortcut icon" href="/favicon.ico" />
+
 				<link rel="canonical" href={url} />
 				<meta name="description" content={description} />
 				<meta property="og:type" content="article" />
