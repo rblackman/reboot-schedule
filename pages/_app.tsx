@@ -41,6 +41,8 @@ export default function App({ Component, pageProps }: AppProps) {
 				<link rel="mask-icon" href="/icon-mono.svg" color="#bbe1fa" />
 				<link rel="shortcut icon" href="/favicon.ico" />
 
+				<link rel="sitemap" href="/sitemap.xml" type="application/xml" />
+
 				<link rel="canonical" href={url} />
 				<meta name="description" content={description} />
 				<meta property="og:type" content="article" />
