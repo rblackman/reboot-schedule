@@ -28,6 +28,11 @@ export default function App({ Component, pageProps }: AppProps) {
 				<meta name="format-detection" content="telephone=no" />
 				<meta name="mobile-web-app-capable" content="yes" />
 
+				<meta name="msapplication-config" content="/browserconfig.xml" />
+				<meta name="msapplication-TileColor" content="#bbe1fa" />
+				<meta name="msapplication-tap-highlight" content="no" />
+				<meta name="theme-color" content="#1B262C" />
+
 				<link rel="apple-touch-icon" href="/icon-180.png" />
 				<link rel="apple-touch-icon" sizes="180x180" href="/icon-180.png" />
 				<link rel="apple-touch-icon" sizes="167x167" href="/icon-168.png" />
