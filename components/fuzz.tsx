@@ -32,8 +32,8 @@ export default function FuzzSelector() {
 
 	return (
 		<FuzzWrap>
-			<FuzzLabel htmlFor="time">Fuzz Minutes</FuzzLabel>
-			<input id="time" type="number" min={0} required value={fuzz} onChange={onChange} />
+			<FuzzLabel htmlFor="fuzz">Fuzz Minutes</FuzzLabel>
+			<input id="fuzz" type="number" min={0} required value={fuzz} onChange={onChange} />
 		</FuzzWrap>
 	);
 }

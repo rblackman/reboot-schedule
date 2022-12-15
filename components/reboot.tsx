@@ -27,7 +27,7 @@ const RebootText = styled.code`
 export default function Reboot() {
 	const cmdReboot = useRecoilValue(cmdRebootSelector);
 	return (
-		<RebootWrap>
+		<RebootWrap id="command">
 			<RebootText>{cmdReboot}</RebootText>
 			<CopyButton />
 		</RebootWrap>

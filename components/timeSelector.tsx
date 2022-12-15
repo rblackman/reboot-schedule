@@ -33,7 +33,7 @@ export default function TimeSelector() {
 	return (
 		<TimeWrap>
 			<TimeLabel htmlFor="time">Reboot Time</TimeLabel>
-			<input id="time" type="time" required value={time} onChange={onChange} />
+			<input id="time" type="time" required value={time} onChange={onChange} aria-controls="command" />
 		</TimeWrap>
 	);
 }
