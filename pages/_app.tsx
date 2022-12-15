@@ -14,6 +14,8 @@ const rubik = Rubik({ subsets: ['latin'] });
 const url = process.env.NEXT_PUBLIC_URL ?? '';
 const name = process.env.NEXT_PUBLIC_SITE_NAME ?? 'Reboot When';
 const description = 'A quick tool to copy a reboot command for rebooting at a specific time.';
+const descriptionLong =
+	'This is a quick utility to help reboot a server at a specific time. Specify a time and then copy the command to the clipboard. If you are rebooting a lot of servers, you can fuzz the results by a set number of minutes to stagger reboot times.';
 
 export default function App({ Component, pageProps }: AppProps) {
 	return (
@@ -43,12 +45,12 @@ export default function App({ Component, pageProps }: AppProps) {
 				<meta name="description" content={description} />
 				<meta property="og:type" content="article" />
 				<meta property="og:title" content={name} />
-				<meta property="og:description" content={description} />
+				<meta property="og:description" content={descriptionLong} />
 				<meta property="og:image" content="/og.png" />
 				<meta property="og:url" content={url} />
 				<meta property="og:site_name" content={name} />
 				<meta name="twitter:title" content={name} />
-				<meta name="twitter:description" content={description} />
+				<meta name="twitter:description" content={descriptionLong} />
 				<meta name="twitter:image" content="/og.png" />
 				<meta name="twitter:creator" content="@rblackman24" />
 				<meta name="theme-color" content="#bbe1fa" />
